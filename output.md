@@ -9,7 +9,7 @@ This file documents every stage of the **CVA6 RISC-V Core — Synthesis-to-GDSII
 
 24 SRAM macros placed across the floorplan — `gen_256x45` and `gen_256x128` instruction/data SRAM banks on the left, `as_4x128 sram_bank[0–3]` banks on the right. This macro layout is what drove every congestion and density decision later in the flow.
 
-![Screenshot 1 - Initial Floorplan] (https://github.com/user-attachments/assets/d91399bf-91c3-443f-9a0f-388c2e538811)
+![Screenshot 1 - Initial Floorplan](https://github.com/user-attachments/assets/d91399bf-91c3-443f-9a0f-388c2e538811)
 
 ---
 
