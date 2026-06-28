@@ -23,7 +23,7 @@ Zoomed-out view after standard cell placement, showing the relationship between 
 
 ## Screenshot 3 — Zoomed Floorplan View: PG Mesh / Routing Grid
 
-A close-up of the power/ground mesh and routing grid set up during floorplanning in IC Compiler II (`cva6_S_floorplan.design`).
+A close-up of the power/ground mesh and routing grid set up during floorplanning in IC Compiler II.
 
 ![Screenshot 3 - PG Mesh Zoom](https://github.com/user-attachments/assets/a661432d-bcee-490b-80d5-77321bfb1c24)
 
