@@ -1,4 +1,4 @@
-# 📸 Project Outputs — Screenshot Gallery
+<img width="1630" height="867" alt="Screenshot 2026-06-28 105117" src="https://github.com/user-attachments/assets/5c1b2e10-8428-47f8-927c-af3183e85cd7" /># 📸 Project Outputs — Screenshot Gallery
 
 This file documents every stage of the **CVA6 RISC-V Core — Synthesis-to-GDSII** flow, captured directly from the cloud EDA environment (Design Compiler + IC Compiler II).
 
@@ -33,7 +33,7 @@ A close-up of the power/ground mesh and routing grid set up during floorplanning
 
 Density map of the design — green/yellow/orange regions near the macros flagged the high cell-density zones that needed to be addressed before routing.
 
-![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/8333ec99-b4c7-4933-9c0a-9d5a8268ee61)
+![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/8bfa39bc-196b-4df1-8437-1a5cddee2ee6)
 
 ---
 
