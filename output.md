@@ -31,17 +31,17 @@ A close-up of the power/ground mesh and routing grid set up during floorplanning
 
 ## Screenshot 4 — Cell Density Heatmap (Issue Identified)
 
-Density map of the design — green/yellow/orange regions near the macros flagged the high cell-density zones that needed to be addressed before routing.
+The congestion map shows the routing utilization of the CVA6 design following standard cell placement. Localized congestion is observed primarily near the left-central region of the core due to higher cell density and routing demand. 
 
-![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/d1b9d876-e7cd-4aa7-ae51-35936277c4c3)
+![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/744b36cb-199e-4c85-9eba-e73df391b342)
 
 ---
 
 ## Screenshot 5 — Channel Congestion Map (After Fix)
 
-Congestion map (total demand minus total supply) after applying the fix — almost the entire design sits in the "0" congestion bin, confirming the congestion issue was resolved.
+Congestion analysis after placement optimization showing a more balanced cell distribution and a noticeable reduction in routing hotspots compared to the initial placement. The improved placement enhances routability, minimizes congestion, and provides sufficient routing resources for the CTS and routing stages.
 
-![Screenshot 5 - Congestion Map Clean](https://github.com/user-attachments/assets/6357d5b6-f9e4-4033-b0cc-bab34a3918c7)
+![Screenshot 5 - Congestion Map Clean](https://github.com/user-attachments/assets/827326be-48b5-427d-bead-732902acc695)
 
 ---
 
