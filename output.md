@@ -33,7 +33,7 @@ A close-up of the power/ground mesh and routing grid set up during floorplanning
 
 Density map of the design — green/yellow/orange regions near the macros flagged the high cell-density zones that needed to be addressed before routing.
 
-![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/8bfa39bc-196b-4df1-8437-1a5cddee2ee6)
+![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/3ea79ade-1f8f-4f32-9573-e5959360af8a)
 
 ---
 
