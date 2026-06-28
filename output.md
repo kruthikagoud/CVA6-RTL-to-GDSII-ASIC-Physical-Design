@@ -33,7 +33,7 @@ A close-up of the power/ground mesh and routing grid set up during floorplanning
 
 Density map of the design — green/yellow/orange regions near the macros flagged the high cell-density zones that needed to be addressed before routing.
 
-![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/3ea79ade-1f8f-4f32-9573-e5959360af8a)
+![Screenshot 4 - Cell Density Heatmap](https://github.com/user-attachments/assets/d1b9d876-e7cd-4aa7-ae51-35936277c4c3)
 
 ---
 
@@ -48,25 +48,25 @@ Congestion map (total demand minus total supply) after applying the fix — almo
 
 ## Screenshot 6 — Clock Tree Synthesis: Buffer Levels
 
-Clock tree structure showing the buffer/inverter stages from the clock root down to the leaf sinks — built out to **20 levels** to manage skew and insertion delay across the macro-heavy block.
+Clock tree structure showing the buffer/inverter stages from the clock root down to the leaf sinks — built out to **25 levels** to manage skew and insertion delay across the macro-heavy block.
 
-![Screenshot 6 - CTS Buffer Levels](https://github.com/user-attachments/assets/8a17eb6c-2418-414a-a51f-60dc34c58023)
+![Screenshot 6 - CTS Buffer Levels](https://github.com/user-attachments/assets/57b192f4-b48b-46e7-8a0d-bcbfbe1d0d14)
 
 ---
 
 ## Screenshot 7 — Post-Route Layout (Detailed View)
 
-Fully routed view of `cva6_S_postroute.design`, showing the complete metal stack (M1–M9, VIA1–VIA8) and standard cell instances after routing.
+Fully routed view, showing the complete metal stack (M1–M9, VIA1–VIA8) and standard cell instances after routing.
 
-![Screenshot 7 - Post-Route Detail](https://github.com/user-attachments/assets/5a67fe37-7f43-40d8-9b08-f23d2f1f48bc)
+![Screenshot 7 - Post-Route Detail](https://github.com/user-attachments/assets/47119dcc-4687-4c86-8c21-f59cd9a6bc66)
 
 ---
 
 ## Screenshot 8 — Sign-off Report: Cell Count Summary
 
-Final cell count report — **219,738 leaf cells**, **24 sequential macros**, 23,554 sequential cells (325 clock-gating cells), 196,184 combinational cells, 0 isolation/level-shifter violations.
+Final cell count summary of the CVA6 design after physical implementation. The design consists of **216,892 leaf cells**, including **193,338 combinational cells**, **23,554 sequential cells**, **42,023 buffer/inverter cells**, **325 integrated clock-gating cells**, and **24 macros**, reflecting the overall design complexity and optimization achieved during the ASIC implementation flow.
 
-![Screenshot 8 - Cell Count Report](https://github.com/user-attachments/assets/c1c4e0f5-0a6d-436a-ad45-81293332d397)
+![Screenshot 8 - Cell Count Report](https://github.com/user-attachments/assets/6b7c98e6-fb4c-49cb-8e36-7c0aeaf6b4e0)
 
 ---
 
@@ -74,48 +74,42 @@ Final cell count report — **219,738 leaf cells**, **24 sequential macros**, 23
 
 Final area utilization report showing the breakdown of standard-cell area, macro area, physical-only cell area, and total net length after successful routing and sign-off.
 
-![Screenshot 9 - Area Report](https://github.com/user-attachments/assets/de434896-48f4-4ba3-8dc1-2232ec65e8dc)
+![Screenshot 9 - Area Report](https://github.com/user-attachments/assets/eb988d6c-8131-4395-a5ce-84013c081bb7)
 
 ---
 ## Screenshot 10 — Global Timing Report
 
-Final post-route global timing summary generated after sign-off optimization. The design achieves **no hold violations**, with only **5 negligible setup violations** (2 reg-to-reg and 3 input-to-register paths), each reporting a worst negative slack of approximately **-0.00 ns**, indicating timing closure is effectively achieved within reporting precision.
+The final timing report after post-route optimization indicates successful timing closure for the CVA6 design. The design achieved **zero register-to-register setup violations** and **no hold violations**, confirming reliable synchronous operation. The reported **WNS = -0.00 ns** and **TNS = -0.00 ns** correspond to a negligible numerical precision margin, effectively representing a timing-clean and signoff-ready implementation.
 
-![Screenshot 10 - Global Timing Report](https://github.com/user-attachments/assets/906b6b56-aa2b-443a-91e8-92386cdae3c6)
+![Screenshot 10 - Global Timing Report](https://github.com/user-attachments/assets/a99e80f6-449d-4d0f-8af2-2baf6a1f975e)
 
 ---
 ## Screenshot 11 — Design Rule Violation (DRV) Summary
 
 Final design rule verification report after sign-off optimization. The design reports **zero design rule violations**, including **0 max transition**, **0 max capacitance**, **0 min capacitance**, and **0 minimum pulse width** violations, confirming compliance with all electrical design constraints.
 
-![Screenshot 11 - Design Rule Violation Summary](https://github.com/user-attachments/assets/e95261ea-8569-4b30-a1f0-166c2bd33989)
+![Screenshot 11 - Design Rule Violation Summary](https://github.com/user-attachments/assets/d4f79a66-aa8c-4ddf-b21d-0d663abd6e52)
 
 ---
 ## Screenshot 12 — DRC Verification Report
 
-Final Design Rule Check (DRC) verification confirming a **clean routed database**. The report shows **0 DRC violations**, **0 antenna violations**, and no extraction or connectivity issues across **225,289 routed nets**, indicating the layout satisfies all physical design rule requirements.
+The final physical verification confirms that the CVA6 design successfully meets the signoff verification requirements. A total of **221,856 nets** were extracted with **0 open nets**, ensuring complete connectivity throughout the design. The implementation achieved **0 Design Rule Check (DRC) violations**, **0 antenna violations**, and **0 DRC violations on Metal-3 and below**, demonstrating a clean, manufacturable, and signoff-ready physical layout.
 
-![Screenshot 12 - DRC Verification Report](https://github.com/user-attachments/assets/1c8a8de7-d878-4e29-9d4f-2efaa43d1229)
+![Screenshot 12 - DRC Verification Report](https://github.com/user-attachments/assets/b0642f98-f206-4ac3-88f3-cc97553900f1)
 
 ---
 ## Screenshot 13 — LVS / Connectivity Verification Report
 
-Final layout connectivity verification confirming a **clean LVS-style verification**. The report indicates **0 short violations**, **0 open nets**, and **0 floating route violations** across **225,692 input nets**, demonstrating correct routing connectivity throughout the design.
+Post-route verification results showing **222,348 input nets**, **0 short violations**, **0 open nets**, and **0 floating route violations**, confirming successful routing completion and a clean physical implementation. The displayed warnings are informational and do not affect design correctness.
 
-![Screenshot 13 - LVS Verification Report](https://github.com/user-attachments/assets/99d9513a-84f1-43bb-836f-f64bf90888c3)
+![Screenshot 13 - LVS Verification Report](https://github.com/user-attachments/assets/3a0ea548-2aa2-4ce3-a64d-f388ebc4f90a)
 
 ---
 ## Screenshot 14 — Placement Legality Report
 
-Final placement legality check confirming a **fully legal design**. The report shows **0 violations** for overlap, spacing rules, cell-on-site placement, legal orientation, and power-grid (PG) DRC checks, verifying that all standard cells satisfy placement legality requirements before sign-off.
+Final placement legality verification showing **0 overlap violations**, **0 spacing violations**, **0 cell-on-site violations**, **0 legal orientation violations**, and **0 PG DRC violations**. The design successfully satisfies all physical placement rules, confirming a legally placed and signoff-ready implementation.
 
-![Screenshot 14 - Placement Legality Report](https://github.com/user-attachments/assets/9ff98737-539c-43e2-b5be-7d40c4984e8f)
-
----
-## Screenshot 15 — Final GDSII Layout
-
-Final **GDSII database** generated after successful completion of the physical design flow. The layout represents the tape-out-ready implementation of the **CVA6 RISC-V core**, incorporating all floorplanning, placement, clock tree synthesis, routing, and sign-off optimizations into the final manufacturable design database.
-
-![Screenshot 15 - Final GDSII Layout](https://github.com/user-attachments/assets/f6fc64ac-87d3-4f69-a3a6-54a625eacfa3)
+![Screenshot 14 - Placement Legality Report](https://github.com/user-attachments/assets/6404acd8-2ede-4381-881d-d85f3b9707ad)
 
 ---
+
