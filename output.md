@@ -17,7 +17,7 @@ This file documents every stage of the **CVA6 RISC-V Core — Synthesis-to-GDSII
 
 Zoomed-out view after standard cell placement, showing the relationship between the dense central cell region and the macro columns on either side.
 
-![Screenshot 2 - Full-Chip Placement](https://github.com/user-attachments/assets/021cf4bc-7563-42bd-9317-079bc519b48c)
+![Screenshot 2 - Full-Chip Placement](https://github.com/user-attachments/assets/7fcfd9dd-3b3f-4112-9c06-66203aaf84b1)
 
 ---
 
