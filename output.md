@@ -1,4 +1,4 @@
-<img width="1630" height="867" alt="Screenshot 2026-06-28 105117" src="https://github.com/user-attachments/assets/5c1b2e10-8428-47f8-927c-af3183e85cd7" /># 📸 Project Outputs — Screenshot Gallery
+# 📸 Project Outputs — Screenshot Gallery
 
 This file documents every stage of the **CVA6 RISC-V Core — Synthesis-to-GDSII** flow, captured directly from the cloud EDA environment (Design Compiler + IC Compiler II).
 
