@@ -41,7 +41,7 @@ The congestion map shows the routing utilization of the CVA6 design following st
 
 Congestion analysis after placement optimization showing a more balanced cell distribution and a noticeable reduction in routing hotspots compared to the initial placement. The improved placement enhances routability, minimizes congestion, and provides sufficient routing resources for the CTS and routing stages.
 
-![Screenshot 5 - Congestion Map Clean](https://github.com/user-attachments/assets/827326be-48b5-427d-bead-732902acc695)
+![Screenshot 5 - Congestion Map Clean](https://github.com/user-attachments/assets/510a9211-e6bd-4146-8fee-5b79a413adb5)
 
 ---
 
